@@ -55,10 +55,8 @@ class EventController extends AbstractController
             $zip = $form["zip"]->getData();
             $address = $form["address"]->getData();
             $url = $form["url"]->getData();
-            $type = $form["typename"]->getData();
+         
            
-
-
 
             $events->setName($name);
             $events->setDatetime($datetime);
@@ -71,17 +69,17 @@ class EventController extends AbstractController
             $events->setZip($zip);
             $events->setAddress($address);
             $events->setUrl($url);
-            $events->setFkType($type);
+            
            
 
-            $em = $this->$doctrine()->getManager();
+            $em = $doctrine->getManager();
 
             $em->persist($events);
             $em->flush();
 
             $this->addFlash('notice', 'Event added');
 
-            return $this->redirectToRoute('events');
+            return $this->redirectToRoute('event');
         }
 
         return $this->render('event/create.html.twig', [

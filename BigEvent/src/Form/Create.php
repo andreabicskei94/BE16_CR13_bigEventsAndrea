@@ -38,7 +38,7 @@ class CreateType extends AbstractType
             ->add("url", TextType::class, array('attr' => array("class" => "form-control", "style" => "margin-bottom: 15px;")))
             ->add('fk_type', EntityType::class, [
                 'class' => Type::class,
-                'choice_label' => 'typename',
+                'choice_label' => 'typeName',
             ]) 
 
             
