@@ -1,0 +1,21 @@
+.bg-image {
+    background: url("https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_960_720.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 500px;
+}
+
+.text {
+    font-family: 'Dancing Script', cursive;
+}
+
+body {
+    background: linear-gradient(#e0e0e0, #f5f4f4);
+}
+
+.foo {
+    background-color: rgb(63, 35, 51);
+    height: 180px;
+}
